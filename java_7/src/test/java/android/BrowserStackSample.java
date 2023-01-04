@@ -22,11 +22,11 @@ public class BrowserStackSample {
     	DesiredCapabilities caps = new DesiredCapabilities();
     	
     	// Set your access credentials
-    	caps.setCapability("browserstack.user", "YOUR_USERNAME");
-    	caps.setCapability("browserstack.key", "YOUR_ACCESS_KEY");
+    	caps.setCapability("browserstack.user", "shahnawazsk_hELO3C");
+    	caps.setCapability("browserstack.key", "5Wtdeowo4Hf3sxhWqwqp");
     	
     	// Set URL of the application under test
-    	caps.setCapability("app", "bs://<app-id>");
+    	caps.setCapability("app", "bs://c700ce60cf13ae8ed97705a55b8e022f13c5827c");
     	
     	// Specify device and os_version for testing
     	caps.setCapability("device", "Google Pixel 3");
@@ -34,7 +34,7 @@ public class BrowserStackSample {
         
     	// Set other BrowserStack capabilities
     	caps.setCapability("project", "First Java Project");
-    	caps.setCapability("build", "browserstack-build-1");
+    	caps.setCapability("build", System.getenv("BUILD_DISPLAY_NAME"));
     	caps.setCapability("name", "first_test");
        
     	
